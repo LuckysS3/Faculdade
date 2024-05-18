@@ -8,13 +8,28 @@ int opecao (){
     printf("[3] Qurstao 22 \n");
     printf("[4] Qurstao 30 \n");
     printf("[5] Qurstao 31 \n");
+    printf("[6] Sair \n");
     scanf("%d",&a);
     return (a);
 }
 
+void questao17 (){
+    printf("Ola");
+}
 
 void main (){
     int menu;
     menu = opecao();
-    
+    do{
+        switch (menu){
+        case 1: 
+            questao17();
+            break;
+        case 6: 
+            printf("Finalizada");
+            break;
+        default:
+            break;
+        }
+    }while (menu != 0);
 }
