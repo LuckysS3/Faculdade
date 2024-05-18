@@ -1,7 +1,7 @@
 void questao17 (){
     int contador=0;
     float valor, soma;
-    printf("DIgite um valor positivo(negativo ira finalizar a adição)");
+    printf("Digite um valor positivo(negativo ira finalizar a adição)");
     while(1){
     printf("Digite o valor");
     scanf("%f", &valor);
@@ -25,8 +25,8 @@ void questao20 (){
     float horas, valor, salario, porcentagem;
     
     // Entrada de dados 
-    printf("----------Calculadora Salario Semanal---------- \n");
-    printf("Digite o numero de horas trabalhadas: ");
+    printf("----------Calculadora Sálario Semanal---------- \n");
+    printf("Digite o número de horas trabalhadas: ");
     scanf("%f",&horas);
     printf("Digite o valor da hora: ");
     scanf("%f",&valor);
@@ -44,12 +44,10 @@ void questao20 (){
     }
 
     //saida de dados 
-    printf("O salario do funcionario e de %.2f \n",salario);
+    printf("O salário do funcionario e de %.2f \n",salario);
 }
 
-void questao22 (){
-    printf("Ola");
-}
+
 void questao30 (){
     printf("Ola");
 }

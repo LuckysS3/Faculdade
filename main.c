@@ -1,16 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
 #include "arquivo.h"
 
 int opcao (){
     // Declaraçao de variaveis 
     int a;
+
     // Menu
     printf("Menu:\n");
     printf("1. Calcular a média dos valores positivos \n");
-    printf("[2. Qurstao 20 \n");
-    printf("3. Qurstao 22 \n");
-    printf("4. Qurstao 30 \n");
-    printf("5. Qurstao 31 \n");
+    printf("2. Calculadora Sálario Semanal \n");
+    printf("3. Sorteie um número mágico \n");
+    printf("4. Qurestão 30 \n");
+    printf("5. Qurestão 31 \n");
     printf("0. Sair \n");
     scanf("%d",&a);
 
@@ -18,9 +22,50 @@ int opcao (){
     return (a);
 }
 
+void questao22 (){
+    // Inicializa o gerador de números aleatórios
+    srand(time(0));
+
+    // Gera o número aleatório entre 0 e 500
+    int numeroMagico = rand() % 501;
+    int palpite, tentativas = 0;
+
+    printf("Adivinhe o numero magico entre 0 e 500!\n");
+
+    // Loop até o usuário acertar o número
+    do {
+        printf("Digite seu palpite: ");
+        scanf("%d", &palpite);
+        tentativas++;
+
+        if (palpite < numeroMagico) {
+            printf("Seu palpite e menor que o numero magico.\n");
+        } else if (palpite > numeroMagico) {
+            printf("Seu palpite e maior que o numero magico.\n");
+        }
+    } while (palpite != numeroMagico);
+
+    // Classificação do usuário com base no número de tentativas
+    if (tentativas <= 3) {
+        printf("Parabens! Voce e muito sortudo!\n");
+    } else if (tentativas <= 6) {
+        printf("Parabens! Voce e sortudo!\n");
+    } else if (tentativas <= 10) {
+        printf("Voce e normal.\n");
+    } else {
+        printf("Tente novamente.\n");
+    }
+
+    printf("Voce acertou o numero magico %d em %d tentativas.\n", numeroMagico, tentativas);
+}
+
 void main (){
     // Declaraçao de variaveis 
     int menu; 
+
+    // Reconhecer os caracteres especiais
+    setlocale(LC_ALL,"");
+
     // Oparaçoes determinadas
     do{
         menu = opcao();
@@ -48,5 +93,4 @@ void main (){
             break;
         }
     }while (menu != 0);
-
 }
