@@ -47,6 +47,43 @@ void questao20 (){
     printf("O salário do funcionario e de %.2f \n",salario);
 }
 
+void questao22 (){
+    // Inicializa o gerador de números aleatórios
+    srand(time(0));
+
+    // Gera o número aleatório entre 0 e 500
+    int numeroMagico = rand() % 501;
+    int palpite, tentativas = 0;
+
+    printf("Adivinhe o numero magico entre 0 e 500!\n");
+
+    // Loop até o usuário acertar o número
+    do {
+        printf("Digite seu palpite: ");
+        scanf("%d", &palpite);
+        tentativas++;
+
+        if (palpite < numeroMagico) {
+            printf("Seu palpite e menor que o numero magico.\n");
+        } else if (palpite > numeroMagico) {
+            printf("Seu palpite e maior que o numero magico.\n");
+        }
+    } while (palpite != numeroMagico);
+
+    // Classificação do usuário com base no número de tentativas
+    if (tentativas <= 3) {
+        printf("Parabens! Voce e muito sortudo!\n");
+    } else if (tentativas <= 6) {
+        printf("Parabens! Voce e sortudo!\n");
+    } else if (tentativas <= 10) {
+        printf("Voce e normal.\n");
+    } else {
+        printf("Tente novamente.\n");
+    }
+
+    printf("Voce acertou o numero magico %d em %d tentativas.\n", numeroMagico, tentativas);
+}
+
 
 void questao30 (){
     printf("Ola");
