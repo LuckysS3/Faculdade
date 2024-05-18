@@ -17,7 +17,7 @@ int opcao (){
 void main (){
     // Declaraçao de variaveis 
     int menu; 
-    
+
     do{
         menu = opcao();
         switch (menu){
@@ -44,6 +44,5 @@ void main (){
             break;
         }
     }while (menu != 0);
-	return 0;
+    
 }
-
