@@ -90,8 +90,12 @@ void questao22 (){
             printf("Seu palpite e maior que o numero magico.\n");
         }
     } while (palpite != numeroMagico);
+    
+    // Saida de dados 
+    printf("Voce acertou o numero magico %d em %d tentativas.\n", numeroMagico, tentativas);
 
     // Classificação do usuário com base no número de tentativas
+    printf("Sua Classificação: ")
     if (tentativas <= 3) {
         printf("Parabens! Voce e muito sortudo!\n");
     } else if (tentativas <= 6) {
@@ -102,8 +106,6 @@ void questao22 (){
         printf("Tente novamente.\n");
     }
 
-    // Saida de dados 
-    printf("Voce acertou o numero magico %d em %d tentativas.\n", numeroMagico, tentativas);
 }
 
 void questao30 (){
