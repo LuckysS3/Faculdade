@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 void questao17 (){
     // Declaraçao de variaveis 
     int contador=0;
