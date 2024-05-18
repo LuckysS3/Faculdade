@@ -59,6 +59,7 @@ void questao22 (){
 
     // Loop até o usuário acertar o número
     do {
+        // Entrada de dado
         printf("Digite seu palpite: ");
         scanf("%d", &palpite);
         tentativas++;
@@ -81,6 +82,7 @@ void questao22 (){
         printf("Tente novamente.\n");
     }
 
+    // Saida de dados 
     printf("Voce acertou o numero magico %d em %d tentativas.\n", numeroMagico, tentativas);
 }
 
