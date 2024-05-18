@@ -5,16 +5,16 @@
 #include "arquivo.h"
 
 int opcao (){
-    // Declara√ßao de variaveis 
+    // DeclaraÁao de variaveis 
     int a;
 
     // Menu
     printf("Menu:\n");
-    printf("1. Calcular a m√©dia dos valores positivos \n");
-    printf("2. Calculadora S√°lario Semanal \n");
-    printf("3. Sorteie um n√∫mero m√°gico \n");
-    printf("4. Qurest√£o 30 \n");
-    printf("5. Qurest√£o 31 \n");
+    printf("1. Calcular a mÈdia dos valores positivos \n");
+    printf("2. Calculadora S·lario Semanal \n");
+    printf("3. Sorteie um n˙mero m·gico \n");
+    printf("4. Qurest„o 30 \n");
+    printf("5. Qurest„o 31 \n");
     printf("0. Sair \n");
     scanf("%d",&a);
 
@@ -23,13 +23,13 @@ int opcao (){
 }
 
 int main (){
-    // Declara√ßao de variaveis 
+    // DeclaraÁao de variaveis 
     int menu; 
 
     // Reconhecer os caracteres especiais
-    setlocale(LC_ALL,"");
+    setlocale(LC_ALL,"Portuguese_Brazil");
 
-    // Opara√ßoes determinadas
+    // OparaÁoes determinadas
     do{
         menu = opcao();
         switch (menu){
@@ -52,7 +52,7 @@ int main (){
             printf("Finalizada");
             break;
         default:
-            printf("Op√ßao invalidade. Tente novamente");
+            printf("OpÁao invalidade. Tente novamente");
             break;
         }
     }while (menu != 0);
