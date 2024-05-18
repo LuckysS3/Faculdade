@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include "questao17.h"
+#include "questao20.h"
+#include "questao22.h"
+#include "questao30.h"
+#include "questao31.h"
 
 int opecao (){
     int a;
@@ -21,6 +25,18 @@ void main (){
         switch (menu){
         case 1: 
             questao17();
+            break;
+        case 2: 
+            questao20();
+            break;
+        case 3: 
+            questao22();
+            break;
+        case 4: 
+            questao30();
+            break;
+        case 5: 
+            questao31();
             break;
         case 6: 
             printf("Finalizada");
