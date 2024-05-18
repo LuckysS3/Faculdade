@@ -19,8 +19,8 @@ void questao17 (){
 
 void main (){
     int menu;
-    menu = opecao();
     do{
+        menu = opecao();
         switch (menu){
         case 1: 
             questao17();
@@ -31,5 +31,5 @@ void main (){
         default:
             break;
         }
-    }while (menu != 0);
+    }while (menu != 6);
 }
