@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "questao17"
 
 int opecao (){
     int a;
@@ -11,10 +12,6 @@ int opecao (){
     printf("[6] Sair \n");
     scanf("%d",&a);
     return (a);
-}
-
-void questao17 (){
-    printf("Ola");
 }
 
 void main (){
