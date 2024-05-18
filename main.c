@@ -22,7 +22,7 @@ int opcao (){
     return (a);
 }
 
-void main (){
+int main (){
     // Declaraçao de variaveis 
     int menu; 
 
@@ -56,4 +56,6 @@ void main (){
             break;
         }
     }while (menu != 0);
+
+    return 0;
 }
