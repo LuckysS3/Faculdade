@@ -1,35 +1,48 @@
 #include <stdio.h>
+#include "arquivo.h"
 
-int main(){
-	int opcao;
-	do{
-		//Menu de opÃ§Ãµes
-		printf("Menu:\n");
-		printf("1. Calcular a media de valores positivos\n");
-		printf("0. Finalizar\n");
-		printf("Escolha uma opÃ§Ã£o:\n");
-		scanf("%d", &opcao);
-		//OpÃ§Ãµes determinadas
-		switch(opcao)
-		{
-		case 1:
-			questao17();
-			break;
-		case 0:
-			printf("Finalizado");
-			break;
-		default:
-			printf("opÃ§Ã£o invÃ¡lida. Tente novamente");
-			break;
-		}	
-	}while(opcao!=0);
-	
+
+int opecao (){
+    int a;
+    printf("Escolha qual questao \n");
+    printf("[1] Qurstao 17 \n");
+    printf("[2] Qurstao 20 \n");
+    printf("[3] Qurstao 22 \n");
+    printf("[4] Qurstao 30 \n");
+    printf("[5] Qurstao 31 \n");
+    printf("[6] Sair \n");
+    scanf("%d",&a);
+    return (a);
+}
+
+int main (){
+    int menu;
+    do{
+        menu = opecao();
+        switch (menu){
+        case 1: 
+            questao17();
+            break;
+        case 2: 
+            questao20();
+            break;
+        case 3: 
+            questao22();
+            break;
+        case 4: 
+            questao30();
+            break;
+        case 5: 
+            questao31();
+            break;
+        case 6: 
+            printf("Finalizada");
+            break;
+        default:
+            printf("Opçao invalidade. Tente novamente");
+            break;
+        }
+    }while (menu != 6);
 	return 0;
-}		
-//ImplementaÃ§Ã£o da QuestÃ£o 17. MÃ©dia de nÃºmeros positivos.
-
-void questao17(){
-	printf("Entre com valores positivos (use um valor negativo para terminar):\n");
-	
 }
 
