@@ -3,7 +3,11 @@
 
 
 int opecao (){
+    // Declaraçao de variaveis 
     int a;
+
+    // Menu 
+    printf("------------------Menu------------- \n");
     printf("Escolha qual questao \n");
     printf("[1] Qurstao 17 \n");
     printf("[2] Qurstao 20 \n");
@@ -16,7 +20,10 @@ int opecao (){
 }
 
 void main (){
+    // Declaraçao de variaveis 
     int menu;
+
+    // Operaçoes determinadas 
     do{
         menu = opecao();
         switch (menu){
@@ -39,7 +46,7 @@ void main (){
             printf("Finalizada");
             break;
         default:
-            printf("Opçao invalidade. Tente novamente")
+            printf("Opçao invalidade. Tente novamente");
             break;
         }
     }while (menu != 6);
