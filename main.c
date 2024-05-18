@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "questao17"
+#include "questao17.h"
 
 int opecao (){
     int a;
