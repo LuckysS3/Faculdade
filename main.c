@@ -2,15 +2,15 @@
 #include "arquivo.h"
 
 
-int opecao (){
+int opcao (){
     int a;
-    printf("Escolha qual questao \n");
-    printf("[1] Qurstao 17 \n");
-    printf("[2] Qurstao 20 \n");
-    printf("[3] Qurstao 22 \n");
-    printf("[4] Qurstao 30 \n");
-    printf("[5] Qurstao 31 \n");
-    printf("[6] Sair \n");
+    printf("Menu:\n");
+    printf("1. Calcular a média dos valores positivos \n");
+    printf("[2. Qurstao 20 \n");
+    printf("3. Qurstao 22 \n");
+    printf("4. Qurstao 30 \n");
+    printf("5. Qurstao 31 \n");
+    printf("0. Sair \n");
     scanf("%d",&a);
     return (a);
 }
@@ -18,7 +18,7 @@ int opecao (){
 int main (){
     int menu;
     do{
-        menu = opecao();
+        menu = opcao();
         switch (menu){
         case 1: 
             questao17();
@@ -35,14 +35,14 @@ int main (){
         case 5: 
             questao31();
             break;
-        case 6: 
+        case 0: 
             printf("Finalizada");
             break;
         default:
-            printf("Opçao invalidade. Tente novamente");
+            printf("Opção invalida. Tente novamente");
             break;
         }
-    }while (menu != 6);
+    }while (menu != 0);
 	return 0;
 }
 
