@@ -95,7 +95,7 @@ void questao22 (){
     printf("Voce acertou o numero magico %d em %d tentativas.\n", numeroMagico, tentativas);
 
     // Classificação do usuário com base no número de tentativas
-    printf("Sua Classificação: ")
+    printf("Sua Classificação: ");
     if (tentativas <= 3) {
         printf("Parabens! Voce e muito sortudo!\n");
     } else if (tentativas <= 6) {
