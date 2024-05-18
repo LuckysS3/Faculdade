@@ -2,7 +2,9 @@
 #include "arquivo.h"
 
 int opcao (){
+    // Declaraçao de variaveis 
     int a;
+    // Menu
     printf("Menu:\n");
     printf("1. Calcular a média dos valores positivos \n");
     printf("[2. Qurstao 20 \n");
@@ -11,13 +13,15 @@ int opcao (){
     printf("5. Qurstao 31 \n");
     printf("0. Sair \n");
     scanf("%d",&a);
+
+    //saida de dados 
     return (a);
 }
 
 void main (){
     // Declaraçao de variaveis 
     int menu; 
-
+    // Oparaçoes determinadas
     do{
         menu = opcao();
         switch (menu){
@@ -44,5 +48,5 @@ void main (){
             break;
         }
     }while (menu != 0);
-    
+
 }

@@ -17,10 +17,7 @@ void questao17 (){
         printf("A media dos valores fornecidos e: %.2f\n", media);
     } else {
         printf("Nenhum valor positivo foi fornecido.\n");
-    }
-    
-  
-
+    } 
 }
 
 void questao20 (){
