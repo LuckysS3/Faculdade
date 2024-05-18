@@ -91,12 +91,11 @@ void questao22 (){
     printf("Voce acertou o numero magico %d em %d tentativas.\n", numeroMagico, tentativas);
 }
 
-
 void questao30 (){
     // Declaraçao de variaveis     
     int mes, ano;
     //entrada de dados
-    printf("Insira um mês 1-12\n");
+    printf("Insira um mes 1-12\n");
     scanf("%d", &mes);
     printf("Insira o ano\n");
     scanf("%d", &ano);
