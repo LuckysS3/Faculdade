@@ -4,7 +4,6 @@
 #include <locale.h>
 
 void questao17() {
-    setlocale(LC_ALL,"Portuguese_Brazil");
     // Declaração de variáveis 
     int contador = 0;
     float valor, soma = 0;
@@ -37,7 +36,6 @@ void questao17() {
 }
 
 void questao20 (){
-    setlocale(LC_ALL,"Portuguese_Brazil");
     // Declaraçao de variaveis 
     float horas, valor, salario, porcentagem;
     
@@ -65,7 +63,6 @@ void questao20 (){
 }
 
 void questao22 (){
-    setlocale(LC_ALL,"Portuguese_Brazil");
     printf("--------------Sorteie um número mágico------------\n");
 
     // Inicializa o gerador de números aleatórios
@@ -109,7 +106,6 @@ void questao22 (){
 }
 
 void questao30 (){
-    setlocale(LC_ALL,"Portuguese_Brazil");
     // Declaraçao de variaveis     
     int mes, ano;
     //entrada de dados
