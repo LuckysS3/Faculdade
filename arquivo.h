@@ -1,31 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-void questao17 (){
-    // Declaraçao de variaveis 
-    int contador=0;
-    float valor, soma;
-    //entrada de dados
-    printf("Digite um valor positivo(negativo ira finalizar a adição)");
-    //Manipulação de dados 
-    while(1){
-    printf("Digite o valor");
-    scanf("%f", &valor);
-    //finaliza o loop caso o valor seja menor que 0
-       if (valor<0)
-       {
-        break;
-       }
-       soma += valor;
-       contador++;
+void questao17() {
+    // Declaração de variáveis 
+    int contador = 0;
+    float valor, soma = 0;
+    
+    // Entrada de dados
+    printf("Digite um valor positivo (negativo irá finalizar a adição):\n");
+    
+    // Manipulação de dados 
+    while (1) {
+        printf("Digite o valor:\n");
+        scanf("%f", &valor);
+        
+        // Finaliza o loop caso o valor seja menor que 0
+        if (valor < 0) {
+            break;
+        }
+        
+        soma += valor;
+        contador++;
     }
-    //encerra o loop / saída de dados
+    
+    // Encerra o loop / saída de dados
     if (contador > 0) {
         float media = soma / contador;
-        printf("A media dos valores fornecidos e: %.2f\n", media);
+        printf("A média dos valores fornecidos é: %.2f\n", media);
     } else {
         printf("Nenhum valor positivo foi fornecido.\n");
-    } 
+    }
 }
 
 void questao20 (){
@@ -125,7 +129,7 @@ void questao30 (){
         break;
     }
     //saída de dados
-    printf("O mes %d do ano %d tem %d dias", mes, ano, dias);
+    printf("O mes %d do ano %d tem %d dias\n", mes, ano, dias);
 }
 void questao31 (){
     printf("Ola");
