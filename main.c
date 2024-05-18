@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include "questao17.h"
-#include "questao20.h"
-#include "questao22.h"
-#include "questao30.h"
-#include "questao31.h"
+#include "arquivo.h"
+
 
 int opecao (){
     int a;
@@ -42,6 +39,7 @@ void main (){
             printf("Finalizada");
             break;
         default:
+            printf("Opçao invalidade. Tente novamente")
             break;
         }
     }while (menu != 6);
