@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <locale.h>
+
 void questao17() {
+    setlocale(LC_ALL,"Portuguese_Brazil");
     // Declaração de variáveis 
     int contador = 0;
     float valor, soma = 0;
     
     // Entrada de dados
+    printf("--------------Calcular a média dos valores positivos------------\n");
     printf("Digite um valor positivo (negativo irá finalizar a adição):\n");
     
     // Manipulação de dados 
@@ -33,6 +37,7 @@ void questao17() {
 }
 
 void questao20 (){
+    setlocale(LC_ALL,"Portuguese_Brazil");
     // Declaraçao de variaveis 
     float horas, valor, salario, porcentagem;
     
@@ -60,6 +65,9 @@ void questao20 (){
 }
 
 void questao22 (){
+    setlocale(LC_ALL,"Portuguese_Brazil");
+    printf("--------------Sorteie um número mágico------------\n");
+
     // Inicializa o gerador de números aleatórios
     srand(time(0));
 
@@ -99,9 +107,11 @@ void questao22 (){
 }
 
 void questao30 (){
+    setlocale(LC_ALL,"Portuguese_Brazil");
     // Declaraçao de variaveis     
     int mes, ano;
     //entrada de dados
+    printf("--------------Cálculo da quantidade de dias em um mês------------\n");
     printf("Insira um mes 1-12\n");
     scanf("%d", &mes);
     printf("Insira o ano\n");
@@ -132,5 +142,6 @@ void questao30 (){
     printf("O mes %d do ano %d tem %d dias\n", mes, ano, dias);
 }
 void questao31 (){
+    setlocale(LC_ALL,"Portuguese_Brazil");
     printf("Ola");
 }

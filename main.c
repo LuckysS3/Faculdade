@@ -9,7 +9,7 @@ int opcao (){
     int a;
 
     // Menu
-    printf("Menu:\n");
+    printf("---------------Menu------------\n");
     printf("1. Calcular a média dos valores positivos \n");
     printf("2. Calculadora Sálario Semanal \n");
     printf("3. Sorteie um número mágico \n");
