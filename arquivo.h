@@ -1,10 +1,14 @@
 void questao17 (){
+    // Declaraçao de variaveis 
     int contador=0;
     float valor, soma;
+    //entrada de dados
     printf("Digite um valor positivo(negativo ira finalizar a adição)");
+    //Manipulação de dados 
     while(1){
     printf("Digite o valor");
     scanf("%f", &valor);
+    //finaliza o loop caso o valor seja menor que 0
        if (valor<0)
        {
         break;
@@ -12,6 +16,7 @@ void questao17 (){
        soma += valor;
        contador++;
     }
+    //encerra o loop / saída de dados
     if (contador > 0) {
         float media = soma / contador;
         printf("A media dos valores fornecidos e: %.2f\n", media);
@@ -88,7 +93,37 @@ void questao22 (){
 
 
 void questao30 (){
-    printf("Ola");
+    // Declaraçao de variaveis     
+    int mes, ano, dias;
+    //entrada de dados
+    printf("Insira um mês (1-12)\n");
+    scanf("%d", &d);
+    printf("Insira o ano\n");
+    scanf("%d", &ano);
+    //Determina a quantidade de dias
+    switch (mes)
+    {
+    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+        dias = 31;
+        break;
+    case 4: case 6: case 9: case 11:
+    dias = 30;
+        break;
+        case 2:
+    //calculo do ano bisexto
+    if((ano % 4 == 0 && ano % 100!=0) || (ano % 400 == 0)){
+        dias = 29;
+    }else{
+        dias = 28;
+    }
+    break;
+    default:
+        printf("Mês inválido\n");
+        break;
+    }
+    //saída de dados
+    printf("O mes %d do ano %d tem %d dias", mes, ano, dias);
+}
 }
 void questao31 (){
     printf("Ola");
