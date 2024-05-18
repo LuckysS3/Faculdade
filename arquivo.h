@@ -94,13 +94,14 @@ void questao22 (){
 
 void questao30 (){
     // Declaraçao de variaveis     
-    int mes, ano, dias;
+    int mes, ano;
     //entrada de dados
-    printf("Insira um mês (1-12)\n");
-    scanf("%d", &d);
+    printf("Insira um mês 1-12\n");
+    scanf("%d", &mes);
     printf("Insira o ano\n");
     scanf("%d", &ano);
     //Determina a quantidade de dias
+    int dias;
     switch (mes)
     {
     case 1: case 3: case 5: case 7: case 8: case 10: case 12:
@@ -123,7 +124,6 @@ void questao30 (){
     }
     //saída de dados
     printf("O mes %d do ano %d tem %d dias", mes, ano, dias);
-}
 }
 void questao31 (){
     printf("Ola");
