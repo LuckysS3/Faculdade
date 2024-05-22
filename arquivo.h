@@ -140,6 +140,5 @@ void questao30 (){
     printf("O mes %d do ano %d tem %d dias\n", mes, ano, dias);
 }
 void questao31 (){
-    setlocale(LC_ALL,"Portuguese_Brazil");
-    printf("Ola");
+    
 }

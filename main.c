@@ -45,8 +45,17 @@ int main (){
         case 4: 
             questao30();
             break;
-        case 5: 
-            questao31();
+        case 5:
+            //Declaraçao de variavel
+            int horasInicio,minutosInicio,horasFim,minutosFim;
+
+            //Entrada de dados 
+            printf("Digite as horas de inicio do jogo (HH : MM)\n");
+            scanf("%d %d"&horasInicio,&minutosInicio);
+            printf("Digite as horas do fim do jogo (HH : MM)\n");
+            scanf("%d %d",&horasFim,&minutosFim);
+            
+            duracao = questao31(horasInicio,minutosInicio,horasFim,minutosFim);
             break;
         case 0: 
             printf("Finalizada");
