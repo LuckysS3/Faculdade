@@ -69,7 +69,7 @@ void questao22 (){
     srand(time(0));
 
     // Gera o número aleatório entre 0 e 500
-    int numeroMagico = rand() % 501;
+    int numeroMagico = rand() % 1;
     int palpite, tentativas = 0;
 
     printf("Adivinhe o numero magico entre 0 e 500!\n");
