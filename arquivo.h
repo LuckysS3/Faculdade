@@ -139,7 +139,7 @@ void questao30 (){
     //saída de dados
     printf("O mes %d do ano %d tem %d dias\n", mes, ano, dias);
 }
-void questao31 (int horasInicio, int minutosInicio, int horasFim, int minutosFim){
+int questao31 (int horasInicio, int minutosInicio, int horasFim, int minutosFim){
     //Declaraçao de variaveis 
     int iniciosEmMinutos = horasInicio * 60 + minutosInicio;
     int fimEmMinutos =  horasFim * 60 + minutosFim;
@@ -147,7 +147,7 @@ void questao31 (int horasInicio, int minutosInicio, int horasFim, int minutosFim
 
     //Caso o fim for antes do inicio em outro dia adiciona 24 horas
     if (fimEmMinutos < iniciosEmMinutos){
-        fimEmMinutos += 24 * 60 
+        fimEmMinutos += 24 * 60;
     }
 
     duracao = fimEmMinutos - iniciosEmMinutos;
