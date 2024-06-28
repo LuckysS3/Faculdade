@@ -4,6 +4,8 @@
 #include <locale.h>
 #include "arquivo.h"
 
+//Luiz André - 01701926 e Carlos Gabriel - 01699363
+
 int opcao (){
     // Declaraçao de variaveis 
     int a;
@@ -16,6 +18,7 @@ int opcao (){
     printf("4. Cálculo da quantidade de dias em um mês \n");
     printf("5. Contador de partidar em minutos \n");
     printf("0. Sair \n");
+    printf("Creditos: Luiz André - 01701926 e Carlos Gabriel - 01699363")
     scanf("%d",&a);
 
     //saida de dados 
